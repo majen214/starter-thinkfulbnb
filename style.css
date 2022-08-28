@@ -33,7 +33,7 @@ section.alternate-background {
 }
 
 main img {
-  width: 100px;
+  width: 100%;
   height: auto;
 }
 
@@ -42,11 +42,20 @@ main img {
 .group {
   display: flex;
   flex-direction: column;
+  flex: 1;
+}
+
+.batch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .item {
   flex: 1;
   margin: 10px;
+  display: flex;
   flex-direction: column;
 }
 
@@ -66,15 +75,21 @@ header {
   font-family: "Pangolin", cursive;
   font-size: 50px;
   color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 header nav {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 header nav ul {
   display: flex;
+  flex-direction: row;
+  align-items: center;
   padding-left: 0;
 }
 
@@ -99,6 +114,7 @@ form {
   border: 2px solid #ff385c;
   padding: 10px;
   display: flex;
+  flex-direction: column;
 }
 
 form label {
@@ -128,7 +144,8 @@ form button {
 
 /* -------  Ideas ------- */
 
-.col2 {
+.row {
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
@@ -149,69 +166,27 @@ footer p {
 @media all and (min-width: 480px) {
 
   header {
+    display: flex;
     justify-content: space-between;
     padding: 0 30px;
-    display: flex;
   }
 
-  header nav ul li a:hover {
-    color: #bdbdbd;
-  }
-
-  .logo {
-    font-size: 30px;
-    justify-content: center;
-  }
-}
-/* -------  Forms ------- */
-
-@media all and (min-width: 1200px) {
-  .form-container {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .space {
-    display: flex;
-    flex-direction: column;
-    margin-right: 40px;
-  }
-
-  .button-container {
-    display: flex;
-    justify-content: flex-end;
-  }
-}
-
-/* -------  About ------- */
-
-@media all and (min-width: 750px) {
-  .col {
+  .group {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    flex: 1;
   }
-
-  .padding {
-    margin: 10px;
-  }
-}
-
-/* -------  Ideas ------- */
-
-@media all and (min-width: 750px) {
-  .picture-grid {
+  
+  .batch {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
   }
 
-  .col2 {
-    flex: 1 0 calc(35% - 20px);
-    margin: 5px;
-  }
-
-  .padding {
-    margin: 10px;
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
+
