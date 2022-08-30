@@ -3,7 +3,6 @@
 body {
   font-family: "Lato", sans-serif;
   width: 100%;
-
 }
 
 h2 {
@@ -48,7 +47,6 @@ main img {
 .batch {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
 }
 
@@ -139,7 +137,6 @@ form button {
 .space {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
 }
 
 /* -------  Ideas ------- */
@@ -175,18 +172,29 @@ footer p {
     display: flex;
     flex-direction: row;
     flex: 1;
+    
   }
   
-  .batch {
+  form {
+    border: 2px solid #ff385c;
+    padding: 10px;
     display: flex;
     flex-direction: row;
+    align-items: space-between;
+
+  }
+
+  .batch {
+    flex-direction: row;
     align-items: center;
+    align-content: space-between;
+
   }
 
   .box {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+
   }
 }
 
