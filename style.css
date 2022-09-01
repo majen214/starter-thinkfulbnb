@@ -122,8 +122,6 @@ form {
 .box {
   display: flex;
   flex: 1;
-
-  
 }
 
 form label {
@@ -186,13 +184,15 @@ footer p {
     flex: 1;
     
   }
-  
+
   form {
     border: 2px solid #ff385c;
     padding: 10px;
     display: flex;
+    flex-flow: wrap;
     flex-direction: row;
-    width: 100%
+    align-content: space-between;
+    width: 100%;
   }
 
   .batch {
@@ -207,6 +207,6 @@ footer p {
     flex: 1;
     justify-content: center;
   }
-
+  
 }
 
